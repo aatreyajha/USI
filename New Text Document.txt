@@ -1,0 +1,49 @@
+https://www.free-css.com/free-css-templates/page194/bootstrap-shop
+https://www.free-css.com/free-css-templates/page218/nitro
+
+
+string[] separatingChars = { " " };  
+
+        string text = "Que<<ntin>> <<Cold water enrolls>> <<at>> <<Brake bills>> University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and Quentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhere Quentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhere Quentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhere Quentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhereQuentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhere Quentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhereQuentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhere Quentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhereQuentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhereQuentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhereQuentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhereQuentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhereQuentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhereQuentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhereQuentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhereQuentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhereQuentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhereQuentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhereQuentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for magic elsewhereQuentin Coldwater enrolls at Brakebills University for Magical Pedagogy to be trained as a magician, where he discovers that the magical world from his favorite childhood books is real and poses a danger to humanity. Meanwhile, the life of his childhood friend Julia is derailed when she is denied entry, and she searches for <<magic elsewhereshe searches>> for <<magic elsewhere>>";  
+        Console.WriteLine(text.Length);
+        Dictionary<string,string> dict=new Dictionary<string,string>();
+        string[] words = text.Split(' ');
+        Console.WriteLine(words.Length);
+        int i;
+        for(i=0; i < words.Length;i++){
+            string ss="";
+            if(words[i].Contains("<<")){
+                for(int j=i;j< words.Length;j++)
+                {
+                    ss+=words[j];
+                    if(words[j].Contains(">>"))
+                    {
+                        i=j;
+                        break;
+                            
+                    }
+                    ss+=" ";
+
+                }
+                 dict.Add(ss,ss.Replace("<<",string.Empty).Replace(">>",string.Empty));
+            }
+           
+
+        }
+for(int k=0;k<dict.Count;k++){
+    Console.Write(dict.Keys.ElementAt(k).IndexOf("<<"));
+    Console.WriteLine(dict.Keys.ElementAt(k));
+}
+
+
+
+strPattern = "\<(.*?)\>"
+
+
+
+ foreach (Shape shape in shapes)
+            {
+                var initialText = shape.TextFrame.TextRange.Text;
+                var resultingText = initialText.Replace(findText, replaceText);
+                shape.TextFrame.TextRange.Text = resultingText;
+            }
